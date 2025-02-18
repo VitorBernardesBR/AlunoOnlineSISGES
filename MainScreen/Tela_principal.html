@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Aluno Online</title>
-    <link rel="stylesheet" type="text/css" href="Style.css">
+    
 </head>
 <body>
     <header>
@@ -28,7 +28,8 @@
     </div> 
 
     <main>
-        <h1 class="txt_horario">Seus Horários</h1>
+        <section>
+            <h1 class="txt_horario">Seus Horários</h1>
         <table>
             <tr>
                 <th>Segunda</th>
@@ -80,17 +81,36 @@
                 <td>Ed-Fí</td>
             </tr>
         </table>
+        </section>
 
-        <div>
-            <button class="opt1">Opcional</button>
-            <button class="opt2">Opcional</button>
-        </div>
+        <div class="divisor2"></div>
+         
+        <section>
+            <h1>Contato ao Professor</h1>
 
-        <div>
-            <button class="opt3">Opcional</button>
-            <button class="opt4">Opcional</button>
-        </div>
-        
+        <form action="" class="opt1">
+            <label for="Professor">Qual professor?</label>
+            <select  id="Professor" name="Professor Matéria" required>
+                <option value="">Selecione um professor</option>
+                <option value="prof1">Professor de Matemática</option>
+                <option value="prof2">Professor de História</option>
+                <option value="prof3">Professor de Português</option>
+                <option value="prof4">Professor de Ciências</option>
+                <option value="prof5">Professor de Educação Física</option>
+                <option value="prof6">Professor de Ensino Religioso</option>
+                <option value="prof7">Professor de Geografia</option>
+                <option value="prof8">Professor de Artes</option>
+                <option value="prof9">Professor de Língua Inglesa</option>
+            </select>
+
+            
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+
+            
+        </form>
+        </section>        
         
         <h1 class="SISGES">SISGES</h1>
 

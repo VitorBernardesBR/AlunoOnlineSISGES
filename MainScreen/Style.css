@@ -1,4 +1,4 @@
-body{
+body {
     font-family: 'Arial', Times, serif;
 
     margin: 0;
@@ -6,12 +6,12 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
-}   
 
-header{
+}
 
-    background-color:#727272;
+header {
+
+    background-color: #727272;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,7 +21,7 @@ header{
     padding: 5px;
     height: 50px;
     font-size: xx-small;
-    border-bottom: 3px solid #000000; 
+    border-bottom: 3px solid #000000;
     margin: 0;
 }
 
@@ -31,8 +31,8 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 10px;
-    
-    
+
+
 }
 
 main {
@@ -45,9 +45,9 @@ main {
 }
 
 .menu {
-    border:0;
+    border: 0;
     background-color: #727272;
-    background-size: contain; 
+    background-size: contain;
     width: 40px;
     height: 40px;
     background-image: url('/imagens/menu.png');
@@ -58,10 +58,10 @@ main {
 
 .barra_lateral {
     position: fixed;
-    left: 0;    
+    left: 0;
     border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;    
-    top: 60px;  
+    border-bottom-right-radius: 20px;
+    top: 60px;
     border: 3px solid #000000;
     display: flex;
     flex-direction: column;
@@ -81,8 +81,8 @@ table {
 
 .botao1 {
     font-family: 'Arial', Times, serif;
-    border:0;
-    background-color:  #727272;
+    border: 0;
+    background-color: #727272;
     width: 80px;
     height: 40px;
     gap: 10px;
@@ -92,7 +92,7 @@ table {
 
 .botao2 {
     font-family: 'Arial', Times, serif;
-    border:0;
+    border: 0;
     background-color: #727272;
     width: 80px;
     gap: 10px;
@@ -103,7 +103,7 @@ table {
 
 .botao3 {
     font-family: 'Arial', Times, serif;
-    border:0;
+    border: 0;
     background-color: #727272;
     cursor: pointer;
     gap: 10px;
@@ -112,7 +112,9 @@ table {
     transition: background-color 0.5s;
 }
 
-.botao1:hover, .botao2:hover, .botao3:hover {
+.botao1:hover,
+.botao2:hover,
+.botao3:hover {
     background-color: #888787;
 }
 
@@ -123,24 +125,34 @@ table {
     margin: 10px 0;
 }
 
-.button_user{
-    border:0;
+.divisor2 {
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    margin: 10px 0;
+    margin-top: 50px;
+}
+
+.button_user {
+    border: 0;
     background-color: #727272;
-    background-size: contain; 
+    background-size: contain;
     width: 40px;
     height: 40px;
     background-image: url('/imagens/user.png');
     cursor: pointer;
     transition: background-color 0.5s;
 }
-.txt_horario{
+
+.txt_horario {
     text-align: center;
     margin-left: 50px;
     margin-top: 10px;
 }
 
 
-th,td{
+th,
+td {
     border: 2px solid #000000;
     padding: 10px;
     font-weight: bold;
@@ -148,79 +160,78 @@ th,td{
     background-color: white;
 }
 
-td{
+td {
     font-size: small;
-    color:#000000;
+    color: #000000;
 }
-th{
+
+th {
     padding: 0px;
     background-color: white;
 }
 
-.opt1{
-    border: 0;
-    margin-right: 5px;
+select {
+    z-index: 1;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    appearance: none; /* Remove o estilo padrão do navegador */
+    -webkit-appearance: none; /* Para navegadores baseados em WebKit (Chrome, Safari) */
+    -moz-appearance: none; /* Para Firefox */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); /* Ícone personalizado */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+textarea {
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    resize: both;
+}
+
+.opt1 {
+    padding: 10px;
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-family: Arial, sans-serif;
+    border: 3px solid #000000;
+    border-color: #000000;
+    margin-left: -2px;
     margin-top: 50px;
     border-radius: 20px;
-    width: 150px;
-    height: 150px;
-    background-color: #727272;
-    z-index: 2;
-    transition: background-color 0.5s;
-    cursor: pointer;
-}
-.opt2{
-    border: 0;
-    margin-top: 50px;
-    border-radius: 20px;
-    width: 150px;
-    height: 150px;
-    background-color: #727272;
-    z-index: 2;
-    transition: background-color 0.5s;
-    cursor: pointer;
-}
-.opt3{
-    margin-right: 5px;
-    border: 0;
-    margin-top: 10px;
-    border-radius: 20px;
-    width: 150px;
-    height: 150px;
-    background-color: #727272;
-    z-index: 2;
-    transition: background-color 0.5s;
-    cursor: pointer;
-}
-.opt4{
-    border: 0;
-    margin-top: 10px;
-    border-radius: 20px;
-    width: 150px;
-    height: 150px;
-    background-color: #727272;
+    width: 350px;
+    height: 700px;
+    background-color: #ffffff;
     z-index: 2;
     transition: background-color 0.5s;
     cursor: pointer;
 }
 
-.opt1:hover, .opt2:hover, .opt3:hover, .opt4:hover {
+.opt1:hover {
     background-color: #888787;
 }
 
 
 .SISGES {
-    
-    
+
+
     position: fixed;
     z-index: -1;
-    bottom:250px;
+    bottom: 250px;
     color: #999898;
     font-size: 100px;
-    pointer-events: none; 
+    pointer-events: none;
     font-weight: bold;
-    
+
 }
-
-
-
