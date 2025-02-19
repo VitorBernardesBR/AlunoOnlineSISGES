@@ -175,7 +175,7 @@ select {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 5px;
     font-size: 16px;
     background-color: #f9f9f9;
@@ -195,8 +195,9 @@ select:focus {
 
 textarea {
     border-radius: 20px;
-    height: 200px;
-    width: 200px;
+    border: 1px solid #000000;
+    width: 300px;
+    height: 600px;
     resize: both;
 }
 
