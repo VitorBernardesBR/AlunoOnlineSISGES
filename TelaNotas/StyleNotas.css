@@ -24,15 +24,13 @@ header{
     border-bottom: 3px solid #000000; 
     margin: 0;
 }
-
 footer {
-    background-color: rgb(196, 195, 195);
-    color: rgb(0, 0, 0);
+    background-color: #727272;
+    color: black;
     text-align: center;
     padding: 10px;
-    font-size: 10px;
-    
-    
+    margin: 0;
+    font-size: 16px;
 }
 
 main {
@@ -53,7 +51,6 @@ main {
     background-image: url('/imagens/botao-voltar.png');
     cursor: pointer;
     transition: background-color 0.5s;
-
 }
 
 .barra_lateral {
@@ -224,5 +221,124 @@ th{
     
 }
 
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 1.2em;
+    }
+    .table_cel {
+        display: flex;
+    }
+    .table_pc {
+        display: none;
+    }
+    textarea {
+        border: 1px solid #000000;
+        width: 98%;
+        height: 385px;
+        resize: both;
+        font-size: 1.2em;
+    }
+    .opt1 {
+        padding: 10px;
+        display: block;
+        font-size: 1.2em;
+        font-family: Arial, sans-serif;
+        border: 3px solid #000000;
+        border-color: #000000;
+        margin-left: -2px;
+        margin-top: 50px;
+        border-radius: 20px;
+        width: calc(100%-20px);
+        height: 520px;
+        background-color: #ffffff;
+    }
+    form select{
+        font-size: 1em;
+    }
+    .barra_superior {
+        position: relative;
+        left: 0;
+        display: none;
+        flex-direction: row;
+        background-color: #727272;
+        gap: 5px;
+        width: 250px;
+        height: 50px;
+    }
+    .menu {
+        display: flex;
+    }
+    main form button {
+        font-size: large;
+    }
+}
 
+@media only screen and (min-width: 600px) {
+    
+    html{
+        font-size: 16px;
+    }
+    .table_cel {
+        display: none;
+    }
+    .table_pc {
+        display: flex;
+    }
+    .opt1 {
+        padding: 10px;
+        margin: auto;
+        justify-content: center;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        border: 3px solid #000000;
+        border-color: #000000;
+        margin-top: 50px;
+        border-radius: 20px;
+        width: 500px;
+        height: 315px;
+        background-color: #ffffff;
+        transition: background-color 0.5s;
+        cursor: pointer;
+    }
+
+    textarea {
+        border: 1px solid #000000;
+        width: 98%;
+        height: 200px;
+        resize: both;
+    }
+    .barra_superior {
+        position: relative;
+        left: 0;
+        display: none;
+        flex-direction: row;
+        background-color: #727272;
+        gap: 5px;
+        width: 250px;
+        height: 50px;
+    }
+    .menu {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .barra_superior {
+        position: relative;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        background-color: #727272;
+        gap: 5px;
+        width: 250px;
+        height: 50px;
+    }
+    .menu {
+        display: none;
+    }
+    header h1 {
+        display: flex;
+        margin-right: 12em;
+    }
+}
 

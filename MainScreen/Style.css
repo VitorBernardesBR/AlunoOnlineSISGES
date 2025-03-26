@@ -1,5 +1,9 @@
-body {
+html {
     font-family: 'Arial', Times, serif;
+    font-size: 16px;
+}
+body {
+    
 
     margin: 0;
     padding: 0;
@@ -10,7 +14,6 @@ body {
 }
 
 header {
-
     background-color: #727272;
     display: flex;
     align-items: center;
@@ -21,22 +24,19 @@ header {
     padding: 5px;
     height: 50px;
     font-size: xx-small;
-    border-bottom: 3px solid #000000;
     margin: 0;
 }
 
 footer {
-    background-color: rgb(196, 195, 195);
-    color: rgb(0, 0, 0);
+    background-color: #727272;
+    color: black;
     text-align: center;
     padding: 10px;
-    font-size: 10px;
-
-
+    margin: 0;
+    font-size: 16px;
 }
 
 main {
-    z-index: -1;
     text-align: center;
     flex: 1;
     padding: 20px;
@@ -57,64 +57,76 @@ main {
 }
 
 .barra_lateral {
-    position: fixed;
+    position: absolute;
     left: 0;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
     top: 60px;
-    border: 3px solid #000000;
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: #727272;
-    width: 70px;
+    height: 100%;
+    width: 50%;
     align-items: center;
-    gap: 1opx;
+    gap: 1px;
     padding: 20px;
+}
+.barra_superior {
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #727272;
+    gap: 5px;
+    
+    width: 250px;
+    height: 50px;
 }
 
 table {
-    width: 100%;
+    display: flex;
+    margin: 0;
+    width: calc(100%-20px);
+    align-items: center;
+    justify-content: center;
     border-collapse: collapse;
     margin-top: 20px;
-    margin-left: -9px;
+
+}
+
+main form button {
+    font-family: 'Arial', Times, serif;
+    background-color: #969494;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    padding: 10px;
 }
 
 .botao1 {
     font-family: 'Arial', Times, serif;
+    background-color: #575656;
     border: 0;
-    background-color: #727272;
-    width: 80px;
-    height: 40px;
-    gap: 10px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.5s;
+    width: 150px;
 }
 
 .botao2 {
     font-family: 'Arial', Times, serif;
+    background-color: #575656;
     border: 0;
-    background-color: #727272;
-    width: 80px;
-    gap: 10px;
-    height: 40px;
     cursor: pointer;
     transition: background-color 0.5s;
+    width: 100%;
+    height: 60px;
 }
 
-.botao3 {
-    font-family: 'Arial', Times, serif;
-    border: 0;
-    background-color: #727272;
-    cursor: pointer;
-    gap: 10px;
-    width: 80px;
-    height: 40px;
-    transition: background-color 0.5s;
+.botao1:hover {
+    background-color: #888787;
 }
 
-.botao1:hover,
-.botao2:hover,
-.botao3:hover {
+.botao2:hover {
     background-color: #888787;
 }
 
@@ -144,19 +156,12 @@ table {
     transition: background-color 0.5s;
 }
 
-.txt_horario {
-    text-align: center;
-    margin-left: 50px;
-    margin-top: 10px;
-}
-
-
 th,
 td {
     border: 2px solid #000000;
     padding: 10px;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     background-color: white;
 }
 
@@ -177,12 +182,16 @@ select {
     margin-bottom: 15px;
     border: 1px solid #000000;
     border-radius: 5px;
-    font-size: 16px;
+    
     background-color: #f9f9f9;
-    appearance: none; /* Remove o estilo padrão do navegador */
-    -webkit-appearance: none; /* Para navegadores baseados em WebKit (Chrome, Safari) */
-    -moz-appearance: none; /* Para Firefox */
-    background-image: url('data:image/svg+xml;utf8,<svg fill="%23000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); /* Ícone personalizado */
+    appearance: none;
+    /* Remove o estilo padrão do navegador */
+    -webkit-appearance: none;
+    /* Para navegadores baseados em WebKit (Chrome, Safari) */
+    -moz-appearance: none;
+    /* Para Firefox */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    /* Ícone personalizado */
     background-repeat: no-repeat;
     background-position: right 10px center;
 }
@@ -193,46 +202,154 @@ select:focus {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-textarea {
-    border-radius: 20px;
-    border: 1px solid #000000;
-    width: 300px;
-    height: 600px;
-    resize: both;
+
+main section {
+    overflow: auto;
 }
 
+textarea {
+
+
+    border: 1px solid #000000;
+    width: 98%;
+    height: 400px;
+    resize: both;
+}
 .opt1 {
     padding: 10px;
-    font-size: 16px;
-    /* Tamanho da fonte */
+    display: block;
+    
     font-family: Arial, sans-serif;
     border: 3px solid #000000;
     border-color: #000000;
     margin-left: -2px;
     margin-top: 50px;
     border-radius: 20px;
-    width: 350px;
-    height: 700px;
+    width: calc(100%-20px);
+    height: 500px;
     background-color: #ffffff;
-    z-index: 2;
-    transition: background-color 0.5s;
-    cursor: pointer;
-}
-
-.opt1:hover {
-    background-color: #888787;
 }
 
 
-.SISGES {
 
 
-    position: fixed;
-    z-index: -1;
-    bottom: 250px;
-    color: #999898;
-    font-size: 100px;
-    pointer-events: none;
-    font-weight: bold;
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 1.2em;
+    }
+    .table_cel {
+        display: flex;
+    }
+    .table_pc {
+        display: none;
+    }
+    textarea {
+        border: 1px solid #000000;
+        width: 98%;
+        height: 385px;
+        resize: both;
+        font-size: 1.2em;
+    }
+    .opt1 {
+        padding: 10px;
+        display: block;
+        font-size: 1.2em;
+        font-family: Arial, sans-serif;
+        border: 3px solid #000000;
+        border-color: #000000;
+        margin-left: -2px;
+        margin-top: 50px;
+        border-radius: 20px;
+        width: calc(100%-20px);
+        height: 520px;
+        background-color: #ffffff;
+    }
+    form select{
+        font-size: 1em;
+    }
+    .barra_superior {
+        position: relative;
+        left: 0;
+        display: none;
+        flex-direction: row;
+        background-color: #727272;
+        gap: 5px;
+        width: 250px;
+        height: 50px;
+    }
+    .menu {
+        display: flex;
+    }
+    main form button {
+        font-size: large;
+    }
+}
 
+@media only screen and (min-width: 600px) {
+    
+    html{
+        font-size: 16px;
+    }
+    .table_cel {
+        display: none;
+    }
+    .table_pc {
+        display: flex;
+    }
+    .opt1 {
+        padding: 10px;
+        margin: auto;
+        justify-content: center;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        border: 3px solid #000000;
+        border-color: #000000;
+        margin-top: 50px;
+        border-radius: 20px;
+        width: 500px;
+        height: 315px;
+        background-color: #ffffff;
+        transition: background-color 0.5s;
+        cursor: pointer;
+    }
+
+    textarea {
+        border: 1px solid #000000;
+        width: 98%;
+        height: 200px;
+        resize: both;
+    }
+    .barra_superior {
+        position: relative;
+        left: 0;
+        display: none;
+        flex-direction: row;
+        background-color: #727272;
+        gap: 5px;
+        width: 250px;
+        height: 50px;
+    }
+    .menu {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .barra_superior {
+        position: relative;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        background-color: #727272;
+        gap: 5px;
+        width: 250px;
+        height: 50px;
+    }
+    .menu {
+        display: none;
+    }
+    header h1 {
+        display: flex;
+        margin-right: 12em;
+    }
 }

@@ -1,6 +1,6 @@
 body{
     font-family: 'Arial', Times, serif;
-
+    overflow-wrap: break-word;
     margin: 0;
     padding: 0;
     display: flex;
@@ -8,7 +8,10 @@ body{
     min-height: 100vh;
     
 }   
-
+h1{
+    position: absolute;
+    left: 45%;
+}
 header{
 
     background-color:#727272;
@@ -21,17 +24,20 @@ header{
     padding: 5px;
     height: 50px;
     font-size: xx-small;
-    border-bottom: 3px solid #000000; 
+    
     margin: 0;
+}
+img{
+    width: 100%;
 }
 
 footer {
-    background-color: rgb(196, 195, 195);
+    background-color:#727272;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px;
     font-size: 10px;
-    
+   
     
 }
 
@@ -56,74 +62,6 @@ main {
 
 }
 
-.barra_lateral {
-    position: fixed;
-    left: 0;    
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;    
-    top: 60px;  
-    border: 3px solid #000000;
-    display: flex;
-    flex-direction: column;
-    background-color: #727272;
-    width: 20px;
-    align-items: center;
-    gap: 1px;
-    padding: 20px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    margin-left: -12px;
-}
-
-.botao1 {
-    font-family: 'Arial', Times, serif;
-    border:0;
-    background-color:  #727272;
-    width: 80px;
-    height: 40px;
-    gap: 10px;
-    cursor: pointer;
-    transition: background-color 0.5s;
-}
-
-.botao2 {
-    font-family: 'Arial', Times, serif;
-    border:0;
-    background-color: #727272;
-    width: 80px;
-    gap: 10px;
-    height: 40px;
-    cursor: pointer;
-    transition: background-color 0.5s;
-}
-
-.botao3 {
-    font-family: 'Arial', Times, serif;
-    border:0;
-    background-color: #727272;
-    cursor: pointer;
-    gap: 10px;
-    width: 80px;
-    height: 40px;
-    transition: background-color 0.5s;
-}
-
-.botao1:hover, .botao2:hover, .botao3:hover {
-    background-color: #888787;
-}
-
-.divisor {
-    width: 300px;
-    height: 2px;
-    background-color: #000000;
-    margin: 10px 0;
-
-}
-
 .button_user{
     border:0;
     background-color: #727272;
@@ -140,28 +78,10 @@ table {
 }
 
 
-th{
-    border: 2px solid #000000;
-    padding: 1px;
-    text-align: left;
-    background-color: white;
-}
-
-td{
-    font-size: small;
-    font-weight: bold;
-    color:#000000;
-    border: 2px solid #000000;
-    padding: 15px;
-    text-align: left;
-    background-color: white;
-}
-th{
-    background-color: white;
-}
 
 .opt1{
-    
+    display: flex;
+    flex-wrap: wrap;
     text-align: left;
     padding: 10px;
     font-size: 16px; /* Tamanho da fonte */
@@ -171,8 +91,8 @@ th{
     margin-left: -2px;
     margin-top: 50px;
     border-radius: 20px;
-    width: 350px;
-    height: 900px;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
     background-color: #ffffff;
     z-index: 2;
     transition: background-color 0.5s;
@@ -180,18 +100,64 @@ th{
 }
 
 
-.SISGES {
-    
-    
-    position: fixed;
-    z-index: -1;
-    bottom:250px;
-    color: #999898;
-    font-size: 100px;
-    pointer-events: none; 
-    font-weight: bold;
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+padding: 0;
+}
+ul li{
+    width: 300px;
+    background-color: #999898;
+    list-style-type: none;
+    margin: 8px;
+    padding: 8px;
+    border :solid#000000;
+    border-radius: 20px;
     
 }
-
-
-
+ @media only screen and (max-width: 600px) {
+    *{
+        font-size: larger;
+    }
+   
+    ul{
+        display: flex;
+        overflow-y: auto;
+        max-height: calc(100% - 16px);
+        
+    }
+    ul li{
+        width: calc(100% - 16px);
+        
+    }
+    footer {
+        background-color: rgb(196, 195, 195);
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 10px;
+        font-size: 10px;
+       bottom: auto;
+       position: relative;
+        
+    }
+     
+    
+ }
+  @media only screen and (min-width: 600px) {
+    ul{
+        display: flex;
+        overflow-y: auto;
+        max-height: calc(100% - 16px);
+    }
+    ul li{
+        width: 300px;
+        height: 200px;
+    }
+  }
+ @media only screen and (min-width: 992px) {
+   ul{
+    display: flex;
+    
+   }
+}

@@ -1,117 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portal do aluno online para visualizar notas, frequência e ocorrências.">
     <title>Home - Aluno Online</title>
     <link rel="stylesheet" href="Style.css">
-    
+
 </head>
+
 <body>
     <header>
-        <h1>Aluno-Online</h1>
         <button class="button_user" aria-label="Perfil do Aluno"></button>
-        
+        <h1>Aluno-Online</h1>
+        <button class="menu" aria-label="Menu Principal" id="Menu"></button>
+        <nav class="barra_superior">
+            <button class="botao1" aria-label="Notas" onclick="window.location.href='/TelaNotas/TelaNotas.html'">Suas
+                Notas</button>
+            
+            <button class="botao1" aria-label="Frequência"
+                onclick="window.location.href='/TelaFrequência/TelaFreq.html'">Sua Frequência</button>
+            
+            <button class="botao1" aria-label="Ocorrências"
+                onclick="window.location.href='/TelaOcorrencias/TelaOcor.html'">Suas Ocorrências</button>
+
+        </nav>
+
     </header>
 
-    <nav class="barra_lateral">
-        <button class="menu" aria-label="Menu Principal"></button>
-        <div class="divisor"></div>   
-        <button class="botao1" aria-label="Notas" onclick="window.location.href='/TelaNotas/TelaNotas.html'">Suas Notas</button>
-        <div class="divisor"></div>
-        <button class="botao2" aria-label="Frequência" onclick="window.location.href='/TelaFrequência/TelaFreq.html'">Sua Frequência</button>
-        <div class="divisor"></div>
-        <button class="botao3" aria-label="Ocorrências" onclick="window.location.href='/TelaOcorrencias/TelaOcor.html'">Suas Ocorrências</button>
+    <nav class="barra_lateral" id="barr_lat">
 
-    </nav> 
+
+        <button class="botao2" aria-label="Notas" onclick="window.location.href='/TelaNotas/TelaNotas.html'">Suas
+            Notas</button>
+        <div class="divisor"></div>
+        <button class="botao2" aria-label="Frequência"
+            onclick="window.location.href='/TelaFrequência/TelaFreq.html'">Sua Frequência</button>
+        <div class="divisor"></div>
+        <button class="botao2" aria-label="Ocorrências"
+            onclick="window.location.href='/TelaOcorrencias/TelaOcor.html'">Suas Ocorrências</button>
+
+    </nav>
 
     <main>
         <section>
-            <h1 class="txt_horario">Seus Horários</h1>
-        <table>
-            <tr>
-                <th>Segunda</th>
-                <th>Terça</th>
-                <th>Quarta</th>
-                <th>Quinta</th>
-                <th>Sexta</th>
-            </tr>
-            <tr>
-                <td>Mat</td>
-                <td>Hist</td>
-                <td>Port</td>
-                <td>Ciên</td>
-                <td>Ed-Fí</td>
-            </tr>
-            <tr>
-                <td>Mat</td>
-                <td>Hist</td>
-                <td>Port</td>
-                <td>Ciên</td>
-                <td>Ed-Fí</td>
-            </tr>
-            <tr>
-                <td>Mat</td>
-                <td>Hist</td>
-                <td>Port</td>
-                <td>Ciên</td>
-                <td>Ed-Fí</td>
-            </tr>
-            <tr>
-                <td>Intervalo</td>
-                <td>Intervalo</td>
-                <td>Intervalo</td>
-                <td>Intervalo</td>
-                <td>Intervalo</td>
-            </tr>
-            <tr>
-                <td>Mat</td>
-                <td>Hist</td>
-                <td>Port</td>
-                <td>Ciên</td>
-                <td>Ed-Fí</td>
-            </tr>
-            <tr>
-                <td>Mat</td>
-                <td>Hist</td>
-                <td>Port</td>
-                <td>Ciên</td>
-                <td>Ed-Fí</td>
-            </tr>
-        </table>
+            <h1>Seus Horários</h1>
+            <table class="table_cel">
+                <tr>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                </tr>
+                <tr>
+                    <td>Mat</td>
+                    <td>Hist</td>
+                    <td>Port</td>
+                    <td>Ciên</td>
+                    <td>Ed-Fí</td>
+                </tr>
+                <tr>
+                    <td>Mat</td>
+                    <td>Hist</td>
+                    <td>Port</td>
+                    <td>Ciên</td>
+                    <td>Ed-Fí</td>
+                </tr>
+                <tr>
+                    <td>Mat</td>
+                    <td>Hist</td>
+                    <td>Port</td>
+                    <td>Ciên</td>
+                    <td>Ed-Fí</td>
+                </tr>
+                <tr>
+                    <td>Intervalo</td>
+                    <td>Intervalo</td>
+                    <td>Intervalo</td>
+                    <td>Intervalo</td>
+                    <td>Intervalo</td>
+                </tr>
+                <tr>
+                    <td>Mat</td>
+                    <td>Hist</td>
+                    <td>Port</td>
+                    <td>Ciên</td>
+                    <td>Ed-Fí</td>
+                </tr>
+                <tr>
+                    <td>Mat</td>
+                    <td>Hist</td>
+                    <td>Port</td>
+                    <td>Ciên</td>
+                    <td>Ed-Fí</td>
+                </tr>
+            </table>
+            <table class="table_pc">
+                <tr>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                </tr>
+                <tr>
+                    <td>Matemática</td>
+                    <td>História</td>
+                    <td>Português</td>
+                    <td>Ciências</td>
+                    <td>Educação-Física</td>
+                </tr>
+                <tr>
+                    <td>Matemática</td>
+                    <td>História</td>
+                    <td>Português</td>
+                    <td>Ciências</td>
+                    <td>Educação-Física</td>
+                </tr>
+                <tr>
+                    <td>Matemática</td>
+                    <td>História</td>
+                    <td>Português</td>
+                    <td>Ciências</td>
+                    <td>Educação-Física</td>
+                </tr>
+                <tr>
+                    <td>Intervalo</td>
+                    <td>Intervalo</td>
+                    <td>Intervalo</td>
+                    <td>Intervalo</td>
+                    <td>Intervalo</td>
+                </tr>
+                <tr>
+                    <td>Matemática</td>
+                    <td>História</td>
+                    <td>Português</td>
+                    <td>Ciências</td>
+                    <td>Educação-Física</td>
+                </tr>
+                <tr>
+                    <td>Matemática</td>
+                    <td>História</td>
+                    <td>Português</td>
+                    <td>Ciências</td>
+                    <td>Educação-Física</td>
+                </tr>
+            </table>
         </section>
 
         <div class="divisor2"></div>
-         
+
         <section>
             <h1>Contato ao Professor</h1>
+        </section>
 
-        <form action="form-archive-name" method="post" class="opt1">
-            <label for="Professor">Qual professor?</label>
-            <select  id="Professor" name="Professor Matéria" required>
-                <option value="">Selecione um professor</option>
-                <option value="prof1">Professor de Matemática</option>
-                <option value="prof2">Professor de História</option>
-                <option value="prof3">Professor de Português</option>
-                <option value="prof4">Professor de Ciências</option>
-                <option value="prof5">Professor de Educação Física</option>
-                <option value="prof6">Professor de Ensino Religioso</option>
-                <option value="prof7">Professor de Geografia</option>
-                <option value="prof8">Professor de Artes</option>
-                <option value="prof9">Professor de Língua Inglesa</option>
-            </select>
+        <div class="opt1">
+            <form action="form-archive-name" method="post">
+                <label for="Professor">Qual professor?</label>
+                <select id="Professor" name="Professor Matéria" required>
+                    <option value="">Selecione um professor</option>
+                    <option value="prof1">Professor de Matemática</option>
+                    <option value="prof2">Professor de História</option>
+                    <option value="prof3">Professor de Português</option>
+                    <option value="prof4">Professor de Ciências</option>
+                    <option value="prof5">Professor de Educação Física</option>
+                    <option value="prof6">Professor de Ensino Religioso</option>
+                    <option value="prof7">Professor de Geografia</option>
+                    <option value="prof8">Professor de Artes</option>
+                    <option value="prof9">Professor de Língua Inglesa</option>
+                </select>
+                
 
-            
-            <textarea id="mensagem" name="mensagem" required></textarea>
+                <textarea id="mensagem" name="mensagem" required></textarea>
 
-            <button type="submit">Enviar</button>
+                <button type="submit">Enviar</button>
 
-            
-        </form>
-        </section>        
-        
-        <h1 class="SISGES">SISGES</h1>
+
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+
 
     </main>
 
@@ -119,4 +190,5 @@
         <p>&copy; 2025 Meu PI. Todos os direitos reservados para Yuri Ramalho Silva.</p>
     </footer>
 </body>
+
 </html>
