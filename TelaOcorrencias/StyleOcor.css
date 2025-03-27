@@ -8,10 +8,6 @@ body{
     min-height: 100vh;
     
 }   
-h1{
-    position: absolute;
-    left: 45%;
-}
 header{
 
     background-color:#727272;
@@ -117,8 +113,8 @@ ul li{
     
 }
  @media only screen and (max-width: 600px) {
-    *{
-        font-size: larger;
+    html{
+        font-size: 1.2em;
     }
    
     ul{
@@ -145,6 +141,10 @@ ul li{
     
  }
   @media only screen and (min-width: 600px) {
+     
+    html{
+        font-size: 16px;
+    }
     ul{
         display: flex;
         overflow-y: auto;
@@ -156,7 +156,10 @@ ul li{
     }
   }
  @media only screen and (min-width: 992px) {
-   ul{
+    html{
+        font-size: 16px;
+    }
+    ul{
     display: flex;
     
    }

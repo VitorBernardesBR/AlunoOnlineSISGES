@@ -21,7 +21,7 @@ header{
     padding: 5px;
     height: 50px;
     font-size: xx-small;
-    border-bottom: 3px solid #000000; 
+    
     margin: 0;
 }
 footer {
@@ -34,7 +34,6 @@ footer {
 }
 
 main {
-    z-index: -1;
     text-align: center;
     flex: 1;
     padding: 20px;
@@ -68,12 +67,19 @@ main {
     gap: 1opx;
     padding: 20px;
 }
-
 table {
-    width: 100%;
+    display: flex;
+    margin: 0;
+    width: calc(100%-20px);
+    align-items: center;
+    justify-content: center;
     border-collapse: collapse;
     margin-top: 20px;
-    margin-left: -12px;
+
+}
+main section {
+    overflow: auto;
+
 }
 
 .botao1 {
@@ -231,6 +237,12 @@ th{
     .table_pc {
         display: none;
     }
+    table {
+        white-space: nowrap; /* Texto não quebra linha */
+    }
+    th, td {
+        min-width: 100px; /* Largura mínima para células */
+    }
     textarea {
         border: 1px solid #000000;
         width: 98%;
@@ -323,22 +335,9 @@ th{
 }
 
 @media only screen and (min-width: 992px) {
-    .barra_superior {
-        position: relative;
-        left: 0;
-        display: flex;
-        flex-direction: row;
-        background-color: #727272;
-        gap: 5px;
-        width: 250px;
-        height: 50px;
+    html{
+        font-size: 16px;
     }
-    .menu {
-        display: none;
-    }
-    header h1 {
-        display: flex;
-        margin-right: 12em;
-    }
+
 }
 
