@@ -240,7 +240,7 @@ th{
         white-space: nowrap; /* Texto não quebra linha */
     }
     th, td {
-        min-width: 100px; /* Largura mínima para células */
+        max-width: 120px; /* Largura mínima para células */
     }
     textarea {
         border: 1px solid #000000;

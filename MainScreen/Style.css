@@ -239,9 +239,7 @@ textarea {
         resize: both;
         font-size: 1.2em;
     }
-    th,td{
-        max-width: 20px;
-    }
+    
     .opt1 {
         padding: 10px;
         display: block;
