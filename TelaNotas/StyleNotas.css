@@ -213,19 +213,6 @@ th{
 }
 
 
-.SISGES {
-    
-    
-    position: fixed;
-    z-index: -1;
-    bottom:250px;
-    color: #999898;
-    font-size: 100px;
-    pointer-events: none; 
-    font-weight: bold;
-    
-}
-
 @media only screen and (max-width: 600px) {
     html{
         font-size: 1.2em;
