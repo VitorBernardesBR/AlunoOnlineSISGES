@@ -1,6 +1,6 @@
 body{
     font-family: 'Arial', Times, serif;
-
+word-wrap: break-word;
     margin: 0;
     padding: 0;
     display: flex;
@@ -231,7 +231,10 @@ th{
         font-size: 1.2em;
     }
     .table_cel {
-        display: flex;
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
     .table_pc {
         display: none;
@@ -240,7 +243,7 @@ th{
         white-space: nowrap; /* Texto não quebra linha */
     }
     th, td {
-        min-width: 100px; /* Largura mínima para células */
+        max-width: 120px; /* Largura mínima para células */
     }
     textarea {
         border: 1px solid #000000;
