@@ -202,12 +202,19 @@ main section {
     overflow: auto;
 }
 
-textarea {
+#mensagem {
     border: 1px solid #000000;
     width: 98%;
-    height: 400px;
+    height: 200px;
     resize: both;
 }
+#assunto {
+    border: 1px solid #000000;
+    width: 98%;
+    height: 100px;
+    resize: both;
+}
+
 .opt1 {
     padding: 10px;
     display: block;
@@ -235,13 +242,19 @@ textarea {
     .table_pc {
         display: none;
     }
-    textarea {
+    #mensagem {
         border: 1px solid #000000;
         width: 98%;
-        height: 385px;
+        height: 320px;
         resize: both;
-        font-size: 1.2em;
     }
+    #assunto {
+        border: 1px solid #000000;
+        width: 98%;
+        height: 50px;
+        resize: both;
+    }
+    
     
     .opt1 {
         padding: 10px;
@@ -300,18 +313,25 @@ textarea {
         margin-top: 50px;
         border-radius: 20px;
         width: 500px;
-        height: 315px;
+        height: 425px;
         background-color: #ffffff;
         transition: background-color 0.5s;
         cursor: pointer;
     }
 
-    textarea {
+    #mensagem {
         border: 1px solid #000000;
         width: 98%;
-        height: 200px;
-        resize: none;
+        height: 250px;
+        resize: both;
     }
+    #assunto {
+        border: 1px solid #000000;
+        width: 98%;
+        height: 50px;
+        resize: both;
+    }
+    
     .barra_superior {
         position: relative;
         left: 0;
