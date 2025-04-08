@@ -8,7 +8,7 @@ word-wrap: break-word;
     min-height: 100vh;
     
 }   
-
+/*teSTE 2*/
 header{
 
     background-color:#727272;
@@ -212,19 +212,6 @@ th{
     background-color: #888787;
 }
 
-
-.SISGES {
-    
-    
-    position: fixed;
-    z-index: -1;
-    bottom:250px;
-    color: #999898;
-    font-size: 100px;
-    pointer-events: none; 
-    font-weight: bold;
-    
-}
 
 @media only screen and (max-width: 600px) {
     html{
