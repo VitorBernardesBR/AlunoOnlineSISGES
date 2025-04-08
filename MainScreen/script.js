@@ -14,4 +14,5 @@ function toggleMenu() {
 menu_button.addEventListener('click',function(event){
     event.stopPropagation();
     toggleMenu();
+    
 });
