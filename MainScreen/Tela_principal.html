@@ -160,26 +160,27 @@
         <div class="opt1">
             <form action="form-archive-name" method="post">
                 <label for="Professor">Qual professor?</label>
-                <select id="Professor" name="Professor Matéria" required>
-                    <option value="">Selecione um professor</option>
-                    <option value="prof1">Professor de Matemática</option>
-                    <option value="prof2">Professor de História</option>
-                    <option value="prof3">Professor de Português</option>
-                    <option value="prof4">Professor de Ciências</option>
-                    <option value="prof5">Professor de Educação Física</option>
-                    <option value="prof6">Professor de Ensino Religioso</option>
-                    <option value="prof7">Professor de Geografia</option>
-                    <option value="prof8">Professor de Artes</option>
-                    <option value="prof9">Professor de Língua Inglesa</option>
-                </select>
-                
-
+                <div id="prof-pri">
+                    <select id="Professor" name="Professor Matéria" required>
+                        <option value="">Professor</option>
+                        <option value="prof1">Professor de Matemática</option>
+                        <option value="prof2">Professor de História</option>
+                        <option value="prof3">Professor de Português</option>
+                        <option value="prof4">Professor de Ciências</option>
+                        <option value="prof5">Professor de Educação Física</option>
+                        <option value="prof6">Professor de Ensino Religioso</option>
+                        <option value="prof7">Professor de Geografia</option>
+                        <option value="prof8">Professor de Artes</option>
+                        <option value="prof9">Professor de Língua Inglesa</option>
+                    </select>
+                    <div id="div-prioridade">
+                        <label for="prioridade">Prioridade</label>
+                        <input type="range" id="range">
+                    </div>
+                </div>
                 <textarea id="assunto" name="assunto" placeholder="Assunto" required></textarea>
                 <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem..." required></textarea>
-
                 <button type="submit">Enviar</button>
-
-
             </form>
         </div>
 

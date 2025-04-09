@@ -174,10 +174,28 @@ th {
     padding: 0px;
     background-color: white;
 }
+#div-prioridade {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 49%;
+}
+
+#range{
+    width: calc(100%-50px);
+    
+}
+#prof-pri {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 
 select {
     z-index: 1;
-    width: 100%;
+    width: 49%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #000000;
@@ -206,13 +224,15 @@ main section {
     border: 1px solid #000000;
     width: 98%;
     height: 200px;
-    resize: both;
+    resize: none;
+    border-radius: 5px;
 }
 #assunto {
     border: 1px solid #000000;
     width: 98%;
     height: 100px;
-    resize: both;
+    resize: none;
+    border-radius: 5px;
 }
 
 .opt1 {
@@ -246,13 +266,13 @@ main section {
         border: 1px solid #000000;
         width: 98%;
         height: 320px;
-        resize: both;
+        resize: none;
     }
     #assunto {
         border: 1px solid #000000;
         width: 98%;
         height: 50px;
-        resize: both;
+        resize: none;
     }
     
     
@@ -323,13 +343,13 @@ main section {
         border: 1px solid #000000;
         width: 98%;
         height: 250px;
-        resize: both;
+        resize: none;
     }
     #assunto {
         border: 1px solid #000000;
         width: 98%;
         height: 50px;
-        resize: both;
+        resize: none;
     }
     
     .barra_superior {
