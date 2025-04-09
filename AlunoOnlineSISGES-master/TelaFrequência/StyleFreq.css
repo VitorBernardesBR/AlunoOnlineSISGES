@@ -1,0 +1,230 @@
+body{
+    font-family: 'Arial', Times, serif;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+    display: block;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}   
+
+header{
+
+    background-color:#727272;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+    height: 50px;
+    font-size: xx-small;
+
+    margin: 0;
+}
+
+img{ 
+    width:100%;
+}
+.button_voltar {
+    border:0;
+    background-color: #727272;
+    background-size: contain; 
+    width: 40px;
+    height: 40px;
+    background-image: url('/imagens/botao-voltar.png');
+    cursor: pointer;
+    transition: background-color 0.5s;
+
+}
+.button_user{
+    border:0;
+    background-color: #727272;
+    background-size: contain; 
+    width: 40px;
+    height: 40px;
+    background-image: url('/imagens/user.png');
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+footer {
+    background-color: #727272;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 16px;
+}
+main {
+    z-index: -1;
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(196, 195, 195);
+    margin: 0;
+}
+
+.altfont-container {
+    background-color: rgb(196, 195, 195);
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .altfont {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .aumfonte {
+    width: 20px;
+    height: auto;
+  }
+  
+
+table {
+    display: flex;
+    margin: 0;
+    width: calc(100%-20px);
+    align-items: center;
+    justify-content: center;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+}
+
+.txt_horario{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+th{
+    border: 2px solid #000000;
+    padding: 1px;
+    text-align: left;
+    background-color: white;
+}
+
+td{
+    font-size: small;
+    font-weight: bold;
+    color:#000000;
+    border: 2px solid #000000;
+    padding: 15px;
+    text-align: left;
+    background-color: white;
+}
+th{
+    background-color: white;
+}
+
+.opt1 {
+    padding: 10px;
+    font-size: 16px; 
+    font-family: Arial, sans-serif;
+    border: 3px solid #000000;
+    margin: 8px auto; 
+    border-radius: 20px;
+    max-width: 350px;
+    width: 90%;
+    height: 220px;
+    background-color: #ffffff;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.txt {
+    border:none;
+    width: 300px; 
+    height:300px ;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.lista{
+    background-color: white;
+    border: solid black;
+    border-radius: 20px;
+    overflow: auto;
+}
+ul{
+    padding: 0;
+    overflow-x: scroll;
+    
+    
+    
+}
+ul li{
+    display: inline-flex;
+    font-weight: bold;
+    background-color: rgb(196, 195, 195);
+    list-style: none;
+    width: 500px;
+    height: 80px;
+    border: solid black;
+    border-radius: 0px;
+    margin: 10px;
+    padding: 10px;
+    text-overflow: ellipsis;
+    
+}
+
+tr{
+    overflow-x: auto;
+}
+.tabela{
+    overflow:auto;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 1.2em;
+    }
+    .tabela {
+        display: none;
+    }
+    ul div{
+        border: 1px solid black;
+        background-color: white;
+        padding: 10px;
+        
+    }
+    .lista {
+        
+        font-size: 16px;
+        
+
+    }
+    .txt {
+        width: 100%;
+    }
+    ul li{
+        display: inline-flex;
+        
+    }
+}
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 1.5em; 
+    }
+    .lista {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 16px;
+    }
+    
+}

@@ -1,0 +1,350 @@
+body{
+    font-family: 'Arial', Times, serif;
+word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}   
+
+header{
+
+    background-color:#727272;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+    height: 50px;
+    font-size: xx-small;
+    
+    margin: 0;
+}
+footer {
+    background-color: #727272;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 16px;
+}
+
+main {
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(196, 195, 195);
+    margin: 0;
+}
+
+.altfont-container {
+    background-color: rgb(196, 195, 195);
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .altfont {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .aumfonte {
+    width: 20px;
+    height: auto;
+  }
+  
+.button_voltar {
+    border:0;
+    background-color: #727272;
+    background-size: contain; 
+    width: 40px;
+    height: 40px;
+    background-image: url('/imagens/botao-voltar.png');
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.barra_lateral {
+    position: fixed;
+    left: 0;    
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;    
+    top: 60px;  
+    border: 3px solid #000000;
+    display: flex;
+    flex-direction: column;
+    background-color: #727272;
+    width: 20px;
+    align-items: center;
+    gap: 1opx;
+    padding: 20px;
+}
+table {
+    display: flex;
+    margin: 0;
+    width: calc(100%-20px);
+    align-items: center;
+    justify-content: center;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+main section {
+    overflow: auto;
+
+}
+
+.botao1 {
+    font-family: 'Arial', Times, serif;
+    border:0;
+    background-color:  #727272;
+    width: 80px;
+    height: 40px;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.botao2 {
+    font-family: 'Arial', Times, serif;
+    border:0;
+    background-color: #727272;
+    width: 80px;
+    gap: 10px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.botao3 {
+    font-family: 'Arial', Times, serif;
+    border:0;
+    background-color: #727272;
+    cursor: pointer;
+    gap: 10px;
+    width: 80px;
+    height: 40px;
+    transition: background-color 0.5s;
+}
+
+.botao1:hover, .botao2:hover, .botao3:hover {
+    background-color: #888787;
+}
+
+.divisor {
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    margin: 10px 0;
+}
+
+.button_user{
+    border:0;
+    background-color: #727272;
+    background-size: contain; 
+    width: 40px;
+    height: 40px;
+    background-image: url('/imagens/user.png');
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.txt_horario{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+th{
+    border: 2px solid #000000;
+    padding: 1px;
+    text-align: left;
+    background-color: white;
+}
+
+td{
+    font-size: small;
+    font-weight: bold;
+    color:#000000;
+    border: 2px solid #000000;
+    padding: 15px;
+    text-align: left;
+    background-color: white;
+}
+th{
+    background-color: white;
+}
+
+.opt1{
+    border: 0;
+    margin-right: 5px;
+    margin-top: 50px;
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: #727272;
+    z-index: 2;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+.opt2{
+    border: 0;
+    margin-top: 50px;
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: #727272;
+    z-index: 2;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+.opt3{
+    margin-right: 5px;
+    border: 0;
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: #727272;
+    z-index: 2;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+.opt4{
+    border: 0;
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: #727272;
+    z-index: 2;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+.opt1:hover, .opt2:hover, .opt3:hover, .opt4:hover {
+    background-color: #888787;
+}
+
+
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 1.2em;
+    }
+    .table_cel {
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .table_pc {
+        display: none;
+    }
+    table {
+        white-space: nowrap; /* Texto não quebra linha */
+    }
+    th, td {
+        max-width: 120px; /* Largura mínima para células */
+    }
+    textarea {
+        border: 1px solid #000000;
+        width: 98%;
+        height: 385px;
+        resize: both;
+        font-size: 1.2em;
+    }
+    .opt1 {
+        padding: 10px;
+        display: block;
+        font-size: 1.2em;
+        font-family: Arial, sans-serif;
+        border: 3px solid #000000;
+        border-color: #000000;
+        margin-left: -2px;
+        margin-top: 50px;
+        border-radius: 20px;
+        width: calc(100%-20px);
+        height: 520px;
+        background-color: #ffffff;
+    }
+    form select{
+        font-size: 1em;
+    }
+    .barra_superior {
+        position: relative;
+        left: 0;
+        display: none;
+        flex-direction: row;
+        background-color: #727272;
+        gap: 5px;
+        width: 250px;
+        height: 50px;
+    }
+    .menu {
+        display: flex;
+    }
+    main form button {
+        font-size: large;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    
+    html{
+        font-size: 16px;
+    }
+    .table_cel {
+        display: none;
+    }
+    .table_pc {
+        display: flex;
+    }
+    .opt1 {
+        padding: 10px;
+        margin: auto;
+        justify-content: center;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        border: 3px solid #000000;
+        border-color: #000000;
+        margin-top: 50px;
+        border-radius: 20px;
+        width: 500px;
+        height: 315px;
+        background-color: #ffffff;
+        transition: background-color 0.5s;
+        cursor: pointer;
+    }
+
+    textarea {
+        border: 1px solid #000000;
+        width: 98%;
+        height: 200px;
+        resize: both;
+    }
+    .barra_superior {
+        position: relative;
+        left: 0;
+        display: none;
+        flex-direction: row;
+        background-color: #727272;
+        gap: 5px;
+        width: 250px;
+        height: 50px;
+    }
+    .menu {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    html{
+        font-size: 16px;
+    }
+
+}
+
