@@ -1,6 +1,6 @@
 body{
     font-family: 'Arial', Times, serif;
-word-wrap: break-word;
+    word-wrap: break-word;
     margin: 0;
     padding: 0;
     display: flex;
@@ -25,12 +25,13 @@ header{
     margin: 0;
 }
 footer {
-    background-color: #727272;
-    color: black;
+    background-color:#727272;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px;
-    margin: 0;
-    font-size: 16px;
+    font-size: 10px;
+    position: sticky;
+    top: 100%;
 }
 
 main {

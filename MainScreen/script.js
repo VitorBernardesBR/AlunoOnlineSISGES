@@ -19,8 +19,8 @@ menu_button.addEventListener('click',function(event){
 
 const divPri = document.getElementById('div-prioridade');
 const rangePri =  document.getElementById('range');
-rangePri.setAttribute('value' , 0);
 rangePri.setAttribute('max' , '2');
+rangePri.setAttribute('value' , 0);
 
 let prioridade = 0;
 
@@ -30,8 +30,6 @@ rangePri.addEventListener('change' , function(e){
 });
 
 function switchColor(prioridade){
-    divPri.classList.remove('prioridade-1','prioridade-2','prioridade-3');
+    divPri.classList.remove('prioridade-0','prioridade-1','prioridade-2');
     divPri.classList.add('prioridade-'+prioridade);
-
-    
 }
