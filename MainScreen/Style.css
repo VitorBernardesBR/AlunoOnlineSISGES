@@ -181,12 +181,26 @@ th {
     border-radius: 5px;
     margin-bottom: 15px;
     width: 49%;
+    
+}
+
+#div-prioridade.prioridade-0 {
+    background-color: rgb(147, 255, 147);
+}
+
+#div-prioridade.prioridade-1 {
+    background-color: rgb(253, 255, 129);
+}
+
+#div-prioridade.prioridade-2 {
+    background-color: rgb(255, 126, 126);
 }
 
 #range{
     width: calc(100%-50px);
     
 }
+
 #prof-pri {
     display: flex;
     flex-direction: row;
@@ -234,6 +248,8 @@ main section {
     resize: none;
     border-radius: 5px;
 }
+
+
 
 .opt1 {
     padding: 10px;
