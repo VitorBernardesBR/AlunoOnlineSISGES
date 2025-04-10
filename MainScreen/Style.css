@@ -1,6 +1,6 @@
 html {
     font-family: 'Arial', Times, serif;
-    font-size: 16px;
+    font-size: 4em;
 }
 body {
     
@@ -64,7 +64,7 @@ main section#sec{
     border: none;
     border-radius: 50%;
     margin-bottom: 50px;
-    
+    cursor: pointer;
 }
 main div button img{
     padding: 3px;
@@ -188,7 +188,7 @@ td {
 }
 
 td {
-    font-size: small;
+    font-size: 0.8em;
     color: #000000;
 }
 
