@@ -42,6 +42,34 @@ main {
     margin: 0;
 }
 
+.altfont-container{
+    display: flex ;
+    gap:8px;
+    height: 50px;
+    
+}
+.txt_horario{
+    width: 100%;
+    
+}
+main section#sec{
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+}
+.altfont{
+    background-color: rgb(196, 195, 195);
+    border: none;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    
+}
+main div button img{
+    padding: 3px;
+    width: 15px;
+}
+
+
 .button_voltar {
     border:0;
     background-color: #727272;
