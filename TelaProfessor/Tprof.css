@@ -1,0 +1,134 @@
+html {
+    font-family: 'Arial', Times, serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+body {
+    
+
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+header {
+    background-color: #727272;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+    height: 50px;
+    font-size: xx-small;
+    margin: 0;
+}
+footer {
+    background-color:#727272;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+    position: sticky;
+    top: 100%;
+}
+main {
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(196, 195, 195);
+    margin: 0;
+    
+}
+.button_user {
+    border: 0;
+    background-color: #727272;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    background-image: url('/imagens/user.png');
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.accord-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+
+.accord{
+    width: 100%;
+    border:1px solid rgb(97, 97, 97);
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.accord-header{
+    background-color: aliceblue;
+    padding: 4px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.accord-header:hover{
+    background-color: #727272;
+}
+.accord-header::after{
+    content: '+';
+    font-size: 20px;
+}
+.accord-header.active::after{
+    content: '-';
+}
+.accord-header span{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.accord-content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+.accord-content.active{
+    max-height: 900px;
+    padding: 20px;
+}
+
+.div-notas{
+    margin-bottom: 15px;
+}
+
+.div-freq{
+    margin-bottom: 15px;
+}
+
+.div-ocor{
+    margin-bottom: 15px;
+}
+
+.div-msg{
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
