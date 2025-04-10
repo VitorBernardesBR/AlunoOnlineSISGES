@@ -5,9 +5,7 @@ html {
 }
 body {
     
-
     margin: 0 auto;
-    
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -39,10 +37,11 @@ footer {
 main {
     text-align: center;
     flex: 1;
+    display: flex;
     padding: 20px;
     background-color: rgb(196, 195, 195);
     margin: 0;
-    
+    justify-content: center;
 }
 .button_user {
     border: 0;
@@ -62,7 +61,7 @@ main {
 }
 
 .accord{
-    width: 100%;
+    width: calc(100% - 16px);
     border:1px solid rgb(97, 97, 97);
     border-radius: 10px;
     overflow: hidden; 
@@ -95,18 +94,22 @@ main {
 }
 
 .accord-content{
+    display: flex;
+    flex-direction: row;
     max-height: 0;
     background-color: aliceblue;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
 }
 .accord-content.active{
-    max-height: 900px;
+    max-height: 2000px;
     padding: 20px;
 }
 
 .div-notas{
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
 }
 
 .div-freq{
@@ -124,13 +127,55 @@ main {
 label {
     display: block;
     margin-bottom: 5px;
+    margin-top: 10px;
     font-weight: bold;
 }
 
 input {
-    width: 200px;
+    width: 150px;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    
+
+}
+select {
+    width: 150px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+option{
+    width: 100%;
+}
+.container-btn{
+    display: block;
+    align-items: center;
+}
+table {
+    display: flex;
+    margin: 0;
+    width: calc(100%-20px);
+    align-items: center;
+    justify-content: center;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th{
+    border: 2px solid #000000;
+    padding: 1px;
+    text-align: left;
+    background-color: white;
+}
+
+td{
+    font-size: small;
+    font-weight: bold;
+    color:#000000;
+    border: 2px solid #000000;
+    padding: 15px;
+    text-align: left;
+    background-color: white;
+}
+form{
+    gap: 10px;
 }

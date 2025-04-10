@@ -18,16 +18,81 @@
             <div class="accord">
                 <div class="accord-header"><span>Cadastro de Notas</span></div>
                 <div class="accord-content">
-                    <div class="div-notas">
-                            <label for="nota">Primeira prova</label>
-                            <input type="number">
-                            <label for="nota">Segunda prova</label>
-                            <input type="number">
-                            <label for="nota">Terceira prova</label>
-                            <input type="number">
+
+                    <form action="atualizar-nota" method="post" class="div-notas">
+                        <div>
+                            <div>
+                                <label for="bim">Selecione o Bimestre</label>
+                                <select id="bim" name="Seletor de Bimestre" required>
+                                    
+                                    <option value="bim1">1º Bimestre</option>
+                                    <option value="bim1">2º Bimestre</option>
+                                    <option value="bim1">3º Bimestre</option>
+                                    <option value="bim1">4º Bimestre</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="nota">Atividades/Caderno</label>
+                                <input id="nota" type="number">
+    
+                            </div>
+                            <div>
+                                <label for="conc">Conceito</label>
+                                <input id="conc" type="number">
+    
+                            </div>
+
+                        </div>
+                        <div>
+                            <div>
+                                <label for="pri-prova">Primeira prova</label>
+                                <input id="pri-prova" type="number">
+    
+                            </div>
+                            <div>
+                                <label for="seg-prova">Segunda prova</label>
+                                <input id="seg-prova" type="number">
+    
+                            </div>
+                            <div>
+    
+                                <label for="ter-prova">Trabalhos</label>
+                                <input id="ter-prova" type="number">
+                            </div>
+                            
+
+                        </div>
+                        <div class="container-btn">
+                            <button type="submit">Enviar</button>
+
+                        </div>
+                    </form>
+                    <div>
+                        <h3>Notas por Bimestre</h3>
+                        <table>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td>22</td>
+                                <td>24</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td>22</td>
+                                <td>24</td>
+                                <td>20</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>   
             </div>
+            
             <div class="accord">
                 <div class="accord-header"><span>Cadastro de Frequência</span></div>
                 <div class="accord-content">
