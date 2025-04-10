@@ -66,7 +66,10 @@ main section#sec{
     border: none;
     border-radius: 50%;
     margin-bottom: 50px;
-    
+    cursor: pointer;
+}
+.altfont:hover {
+    background-color: #a9a8a8;
 }
 main div button img{
     padding: 3px;

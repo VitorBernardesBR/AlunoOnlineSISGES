@@ -62,7 +62,10 @@ main section#sec{
     border: none;
     border-radius: 50%;
     margin-bottom: 50px;
-    
+    cursor: pointer;
+}
+.altfont:hover {
+    background-color: #a9a8a8;
 }
 main div button img{
     padding: 3px;
@@ -178,7 +181,7 @@ th{
 }
 
 td{
-    font-size: small;
+    font-size: 0.8em;
     font-weight: bold;
     color:#000000;
     border: 2px solid #000000;
@@ -199,7 +202,7 @@ th{
     border-radius: 20px;
     max-width: 350px;
     width: 90%;
-    height: 220px;
+    height: 300px;
     background-color: #ffffff;
     transition: background-color 0.5s;
     cursor: pointer;
@@ -217,6 +220,8 @@ th{
     text-align: left;
     margin: 0 auto;
     resize: none;
+    font-size: inherit; 
+    
 }
 
 

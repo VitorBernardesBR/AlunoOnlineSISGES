@@ -33,3 +33,25 @@ function switchColor(prioridade){
     divPri.classList.remove('prioridade-0','prioridade-1','prioridade-2');
     divPri.classList.add('prioridade-'+prioridade);
 }
+let tamanhoFonte = 16;
+const tamanhoMaximo = 24;
+const tamanhoMinimo = 10;
+
+const htmlElement = document.documentElement;
+
+const btnAumentar = document.getElementById("aumentarBtn");
+const btnDiminuir = document.getElementById("diminuirBtn");
+
+btnAumentar.addEventListener("click", () => {
+  if (tamanhoFonte < tamanhoMaximo) {
+    tamanhoFonte += 2;
+    htmlElement.style.fontSize = tamanhoFonte + "px";
+  }
+});
+
+btnDiminuir.addEventListener("click", () => {
+  if (tamanhoFonte > tamanhoMinimo) {
+    tamanhoFonte -= 2;
+    htmlElement.style.fontSize = tamanhoFonte + "px";
+  }
+});
