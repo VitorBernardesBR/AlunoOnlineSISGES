@@ -3,19 +3,23 @@ document.addEventListener('DOMContentLoaded', function(){
 
     headers.forEach(header => {
         header.addEventListener('click' , function(){
+            const content = this.nextElementSibling;
+            const isActive = this.classList.contains('active');
+            
 
-            document.querySelectorAll('.accord-content').forEach(content => {
-                content.classList.remove('active');
+            document.querySelectorAll('.accord-content').forEach(c => {
+                c.classList.remove('active');
             });
 
             document.querySelectorAll('.accord-header').forEach(h =>{
                 h.classList.remove('active');
             })
 
-            const content = this.nextElementSibling;
+            if (!isActive) {
             content.classList.add('active');
             this.classList.add('active');
+            }
         });
-        
+
     });
 });

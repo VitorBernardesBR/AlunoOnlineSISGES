@@ -96,6 +96,7 @@ main {
 
 .accord-content{
     max-height: 0;
+    background-color: aliceblue;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
 }
@@ -131,4 +132,5 @@ input {
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    
 }
