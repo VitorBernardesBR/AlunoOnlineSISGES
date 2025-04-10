@@ -16,5 +16,6 @@ document.addEventListener('DOMContentLoaded', function(){
             content.classList.add('active');
             this.classList.add('active');
         });
+        
     });
 });
