@@ -184,8 +184,45 @@ form{
 }
 
 /* SEÇÃO MENSAGENS */
+.div-msg {
+    width: calc(100% - 40px);
+}
+ul#mensagem-lista {
+    background-color: white;
+    border: 1px solid #727272;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    list-style-type: none;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+ul#mensagem-lista::-webkit-scrollbar {
+    width: 6px;
+}
+ul#mensagem-lista::-webkit-scrollbar-track {
+    background: transparent;
+    left: 100px;
+    margin: 15px;
+    
+}
+ul#mensagem-lista::-webkit-scrollbar-thumb {
+    background-color: #7272725c; 
+    border-radius: 3px; 
+}
+li {
+    border: solid 1px #727272;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    
 
-/*
+}
+.assunto{
+
+}
 .prioridade-0 {
     background-color: rgb(147, 255, 147);
 }
@@ -196,29 +233,4 @@ form{
 
 .prioridade-2 {
     background-color: rgb(255, 126, 126);
-}*/
-
-ul#mensagem-lista {
-    background-color: white;
-    border: 1px solid #727272;
-    border-radius: 20px;
-    padding: 20px;
-    list-style-type: none;
 }
-li {
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 15px;
-
-}
-ul li:nth-child(1){
-    background-color: rgb(147, 255, 147);
-}
-ul li:nth-child(2){
-    background-color: rgb(253, 255, 129);
-}
-ul li:nth-child(3){
-    background-color: rgb(255, 126, 126);
-}
-
