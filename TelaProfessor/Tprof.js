@@ -23,68 +23,44 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 });
-// function loadData(){
-//     fetch('./data.json')
-//     .then(function(response){ //Transforma o texto em um objeto JSON
-//         return response.json();
-//     })
-//     .then(function(data){ //Dados obtidos/convertidos com sucesso!
-//         //console.log(data);
-//         data.forEach(function(item, index){
-//             addItemLista(item, index)
-//         })
-//         dados = data;
-//     })
-//     .catch(function(err){ //Ocorreu um erro na obtenção/interpretação dos dados
-//         alert("Ocorreu um erro!")
-//         console.error(err)
-//     });
-// }
+
 
 let dados = [];
 
-function loadData(){
-    fetch('mensagens.json')
-    .then(function(response){
-        return response.json;
-    })
-    .then(function(data){
-        console.log(data);
-        data.forEach(function(item,index){
-            listaMsg(item,index);
-        })
-        dados = data;
-    })
-    .catch(function(err){
-        alert('Ocorreu um erro ao carregar as mesgens;');
-    })
-}
-
-
-
-function listaMsg() {
-    const lista = document.getElementById('mensagem-lista');
-    let linha = document.createElement('li');
-    let assunto = document.createElement('p');
-    
-    dados[index].assunto
-    
-    linha.appendChild(assunto);
-    lista.appendChild(linha);
-
-    let prioridade = 0;
-
-    rangePri.addEventListener('change', function (e) {
-        prioridade = e.target.value;
-        switchColor(prioridade);
-    });
-
-    function switchColor(prioridade) {
-        divPri.classList.remove('prioridade-0', 'prioridade-1', 'prioridade-2');
-        divPri.classList.add('prioridade-' + prioridade);
+async function loadData(){
+    try {
+        const resp = await fetch('mensagens.json');
+        if (!resp.ok) {
+            throw new Error ('Erro ao carregar dados!');
+        }
+        const dados = await resp.json();
+        return dados;
+    } catch (erro) {
+        console.error('Erro: ' , erro);
+        return[];
     }
 
+}   
 
+function listaMsg(dados) {
+    const lista = document.getElementById('mensagem-lista');
 
+    lista.innerHTML = '';
+
+    dados.forEach(item => {
+        const linha = document.createElement('li');
+        linha.innerHTML = `
+            <p>${item.assunto}</p>
+            <p>${item.texto}</p>
+        `;
+
+        linha.classList.add('prioridade-'+item.prioridade)
+        lista.appendChild(linha);
+    });
 }
+
+document.addEventListener('DOMContentLoaded', async () => {
+    const dados = await loadData();
+    listaMsg(dados);
+});
 

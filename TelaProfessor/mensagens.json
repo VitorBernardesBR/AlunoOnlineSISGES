@@ -2,36 +2,36 @@
     {
         "assunto": "Dúvida sobre o exercício 5 da página 45",
         "texto": "Professor, não entendi como resolver a parte b do exercício. Poderia explicar novamente?",
-        "prioridade": 2
+        "prioridade": 1
     },
     {
         "assunto": "Material complementar para a prova",
         "texto": "Boa tarde, gostaria de indicações de materiais extras para me preparar para a prova final.",
-        "prioridade": 1
+        "prioridade": 0
     },
     {
         "assunto": "Entrega do trabalho com atraso",
         "texto": "Prezado professor, gostaria de solicitar uma prorrogação para entrega do trabalho devido a problemas técnicos.",
-        "prioridade": 3
+        "prioridade": 2
     },
     {
         "assunto": "Revisão de nota",
         "texto": "Olá professor, gostaria de agendar um horário para revisar minha última avaliação.",
-        "prioridade": 2
+        "prioridade": 1
     },
     {
         "assunto": "Falta na próxima aula",
         "texto": "Professor, informo que não poderei comparecer à próxima aula devido a um compromisso médico.",
-        "prioridade": 1
+        "prioridade": 0
     },
     {
         "assunto": "Dificuldade com a plataforma online",
         "texto": "Estou tendo problemas para acessar os materiais na plataforma. Poderia me orientar?",
-        "prioridade": 2
+        "prioridade": 1
     },
     {
         "assunto": "Sugestão para aula prática",
         "texto": "Gostaria de sugerir uma atividade prática para complementar o conteúdo da última aula.",
-        "prioridade": 1
+        "prioridade": 0
     }
 ]
