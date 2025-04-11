@@ -184,6 +184,7 @@ form{
 }
 
 /* SEÇÃO MENSAGENS */
+
 .div-msg {
     width: calc(100% - 40px);
 }
@@ -217,11 +218,72 @@ li {
     padding: 10px;
     font-size: 15px;
     margin-bottom: 5px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
     
-
 }
-.assunto{
+li:hover{
+    background-color: white;
+    border-color: #000000;
+    border: 1.5px solid;
+}
 
+li::after{
+    content: '+';
+    font-size: 20px;
+}
+li.active::after{
+    content: '-';
+}
+li span{
+    flex-grow: 1;
+    text-align: center;
+}
+#conversa-container {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.accordion {
+    width: 100%;
+}
+.conversa{
+    display: flex;
+    flex-direction: row;
+    max-height: 0;
+    background-color: aliceblue;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+.conversa.active{
+    max-height: 2000px;
+    padding: 20px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+button {
+    font-family: 'Arial', Times, serif;
+    background-color: #cecccc;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    padding: 5px;
+}
+button:hover{
+    background-color: white;
+    border-color: #000000;
+    
 }
 .prioridade-0 {
     background-color: rgb(147, 255, 147);

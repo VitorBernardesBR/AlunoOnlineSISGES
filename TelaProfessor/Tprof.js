@@ -33,7 +33,7 @@ async function loadData(){
         if (!resp.ok) {
             throw new Error ('Erro ao carregar dados!');
         }
-        const dados = await resp.json();
+        dados = await resp.json();
         return dados;
     } catch (erro) {
         console.error('Erro: ' , erro);
@@ -42,21 +42,44 @@ async function loadData(){
 
 }   
 
+const lista = document.getElementById('mensagem-lista');
 function listaMsg(dados) {
-    const lista = document.getElementById('mensagem-lista');
 
     lista.innerHTML = '';
 
     dados.forEach(item => {
         const linha = document.createElement('li');
         linha.innerHTML = `
-            <p>${item.assunto}</p>
-            <p>${item.texto}</p>
-        `;
+            <span>${item.assunto}</span>
 
+        `;
+        
         linha.classList.add('prioridade-'+item.prioridade)
+        linha.addEventListener('click', function(){
+            conversa(item.texto , linha)
+        })
+
         lista.appendChild(linha);
     });
+}
+
+document.getElementById('ordenar-pri').addEventListener('click', function(){
+    lista.innerHTML = '';
+    dados.sort(function(a,b){
+        return a.prioridade > b.prioridade ? -1 : 1
+    })
+    dados.forEach(function(){
+        listaMsg(dados)
+    })
+})
+
+function conversa(texto, linha){
+
+    document.querySelectorAll('#mensagem-lista li').forEach(item => {
+        item.classList.remove('active');
+    });
+    
+    linha.classList.add('active');
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
