@@ -18,75 +18,107 @@
             <div class="accord">
                 <div class="accord-header"><span>Cadastro de Notas</span></div>
                 <div class="accord-content">
-
-                    <form action="atualizar-nota" method="post" class="div-notas">
-                        <div>
-                            <div>
-                                <label for="bim">Selecione o Bimestre</label>
-                                <select id="bim" name="Seletor de Bimestre" required>
-                                    
-                                    <option value="bim1">1º Bimestre</option>
-                                    <option value="bim1">2º Bimestre</option>
-                                    <option value="bim1">3º Bimestre</option>
-                                    <option value="bim1">4º Bimestre</option>
-                                </select>
+                    <!-- LISTA PROVISÓRIA DO THIAGO -->
+                     <ul id="vali">
+                        <li></li>
+                     </ul>
+                    <form action="atualizar-nota" id="form-notas" method="post" class="div-notas">
+                        <div class="formulario">
+                            <div class="div1">
+                                <div>
+                                    <label for="bim">Selecione o Bimestre</label>
+                                    <select id="bim" name="Seletor de Bimestre" required>
+                                        
+                                        <option value="bim1">1º Bimestre</option>
+                                        <option value="bim1">2º Bimestre</option>
+                                        <option value="bim1">3º Bimestre</option>
+                                        <option value="bim1">4º Bimestre</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="pri-prova" class="lbl">Primeira prova</label>
+                                    <input id="pri-prova" type="number">
+        
+                                </div>
+                                <div>
+                                    <label for="seg-prova">Segunda prova</label>
+                                    <input id="seg-prova" type="number">
+        
+                                </div>
                             </div>
-                            <div>
-                                <label for="nota">Atividades/Caderno</label>
-                                <input id="nota" type="number">
-    
+                            <div class="div2">
+                                <div>
+                                    <label for="nota">Atividades/Caderno</label>
+                                    <input id="nota" type="number">
+        
+                                </div>
+                                <div>
+                                    <label for="conc">Conceito</label>
+                                    <input id="conc" type="number">
+        
+                                </div>
+                                <div>
+        
+                                    <label for="trab">Trabalhos</label>
+                                    <input id="trab" type="number">
+                                </div>
                             </div>
-                            <div>
-                                <label for="conc">Conceito</label>
-                                <input id="conc" type="number">
-    
+                            <div class="container-btn">
+                                <button id="enviar" type="submit">Enviar</button>
                             </div>
-
-                        </div>
-                        <div>
-                            <div>
-                                <label for="pri-prova">Primeira prova</label>
-                                <input id="pri-prova" type="number">
-    
-                            </div>
-                            <div>
-                                <label for="seg-prova">Segunda prova</label>
-                                <input id="seg-prova" type="number">
-    
-                            </div>
-                            <div>
-    
-                                <label for="ter-prova">Trabalhos</label>
-                                <input id="ter-prova" type="number">
-                            </div>
-                            
-
-                        </div>
-                        <div class="container-btn">
-                            <button type="submit">Enviar</button>
-
                         </div>
                     </form>
-                    <div>
-                        <h3>Notas por Bimestre</h3>
+                    <div class="div-table">
+                        
                         <table>
+                            <h3>1º Bimestre</h3>
                             <tr>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
+                                <th>Avaliação</th>
+                                <th>Valor</th>
+                                <th>Nota</th>
+                                <th>Média</th>
+
                             </tr>
                             <tr>
-                                <td>25</td>
-                                <td>22</td>
-                                <td>24</td>
-                                <td>20</td>
+                                <td>1º Prova</td>
+                                <td>5</td>
+                                <td>-</td>
+                                <td>3</td>
+                            
                             </tr>
                             <tr>
+                                <td>2º Prova</td>
+                                <td>10</td>
+                                <td>-</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Trabalhos</td>
+                                <td>5</td>
+                                <td>-</td>
+                                <td>3</td>
+                                <!-- Ai são 10 de prova global 5 de prova parcial 5 de trabalho 3 de caderno e 2 de conseito -->
+                            </tr>
+                            <tr>
+                                <td>Caderno</td>
+                                <td>3</td>
+                                <td>-</td>
+                                <td>1.8</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Conceito</td>
+                                <td>2</td>
+                                <td>-</td>
+                                <td>1.2</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Somatória</td>
                                 <td>25</td>
-                                <td>22</td>
-                                <td>24</td>
-                                <td>20</td>
+                                <td>-</td>
+                                <td>15</td>
+                                
                             </tr>
                         </table>
                     </div>

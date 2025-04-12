@@ -2,6 +2,7 @@ html {
     font-family: 'Arial', Times, serif;
     font-size: 16px;
     box-sizing: border-box;
+
 }
 body {
     
@@ -10,6 +11,9 @@ body {
     flex-direction: column;
     min-height: 100vh;
 
+}
+h3{
+    margin: 0;
 }
 
 header {
@@ -130,30 +134,53 @@ main {
 label {
     display: block;
     margin-bottom: 5px;
-    margin-top: 10px;
+    margin-top: 9px;
     font-weight: bold;
 }
-
 input {
     width: 150px;
     padding: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     border-radius: 4px;
-
 }
 select {
-    width: 150px;
+    width: 167px;
+    height: 32px;
     padding: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     border-radius: 4px;
 }
 option{
     width: 100%;
 }
-.container-btn{
-    display: block;
-    align-items: center;
+
+.formulari{
+    display: flex;
+    flex-direction: column;
 }
+
+.div1{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.div2{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.container-btn{
+   padding-top: 20px;
+   
+}
+
+.div-table {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 table {
     display: flex;
     margin: 0;
@@ -166,21 +193,37 @@ table {
 th{
     border: 2px solid #000000;
     padding: 1px;
-    text-align: left;
+    text-align: center;
+    font-size: 0.8em;
     background-color: white;
+    width:70px ;
 }
 
+/* LISTA TEMPORARIA DO THIAGO */
+
+ul#vali{
+    padding: 20px;
+    margin: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+ul#vali li{
+    list-style-type: disc;
+}
 td{
     font-size: small;
     font-weight: bold;
     color:#000000;
     border: 2px solid #000000;
-    padding: 15px;
-    text-align: left;
+    padding: 8px;
+    text-align: center;
     background-color: white;
 }
 form{
-    gap: 10px;
+    gap: 30px;
+    display: flex;
+    
+
 }
 
 /* SEÇÃO MENSAGENS */
@@ -212,7 +255,7 @@ ul#mensagem-lista::-webkit-scrollbar-thumb {
     background-color: #7272725c; 
     border-radius: 3px; 
 }
-li {
+ul#mensagem-lista li {
     border: solid 1px #727272;
     border-radius: 10px;
     padding: 10px;
@@ -226,20 +269,20 @@ li {
     transition: background-color 0.3s;
     
 }
-li:hover{
+ul#mensagem-lista li:hover{
     background-color: white;
     border-color: #000000;
     border: 1.5px solid;
 }
 
-li::after{
+ul#mensagem-lista li::after{
     content: '+';
     font-size: 20px;
 }
-li.active::after{
+ul#mensagem-lista li.active::after{
     content: '-';
 }
-li span{
+ul#mensagem-lista li span{
     flex-grow: 1;
     text-align: center;
 }
