@@ -3,13 +3,16 @@ html {
     font-size: 16px;
     box-sizing: border-box;
 }
+
 body {
-    
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
 
+h3 {
+    margin: 0;
 }
 
 header {
@@ -25,8 +28,9 @@ header {
     font-size: xx-small;
     margin: 0;
 }
+
 footer {
-    background-color:#727272;
+    background-color: #727272;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px;
@@ -34,6 +38,7 @@ footer {
     position: sticky;
     top: 100%;
 }
+
 main {
     text-align: center;
     flex: 1;
@@ -43,6 +48,7 @@ main {
     margin: 0;
     justify-content: center;
 }
+
 .button_user {
     border: 0;
     background-color: #727272;
@@ -54,21 +60,21 @@ main {
     transition: background-color 0.5s;
 }
 
-
-.accord-container{
+/* Estilos para accordion principal */
+.accord-container {
     display: flex;
     flex-direction: column;
     row-gap: 3px;
 }
 
-.accord{
+.accord {
     width: calc(100% - 16px);
-    border:1px solid rgb(97, 97, 97);
+    border: 1px solid rgb(97, 97, 97);
     border-radius: 10px;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
-.accord-header{
+.accord-header {
     background-color: aliceblue;
     padding: 4px;
     height: 20px;
@@ -77,24 +83,28 @@ main {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
 }
-.accord-header:hover{
+
+.accord-header:hover {
     background-color: #727272;
 }
-.accord-header::after{
+
+.accord-header::after {
     content: '+';
     font-size: 20px;
 }
-.accord-header.active::after{
+
+.accord-header.active::after {
     content: '-';
 }
-.accord-header span{
+
+.accord-header span {
     flex-grow: 1;
     text-align: center;
 }
 
-.accord-content{
+.accord-content {
     display: flex;
     flex-direction: row;
     max-height: 0;
@@ -102,89 +112,104 @@ main {
     overflow: hidden;
     transition: max-height 0.3s ease-out;
 }
-.accord-content.active{
+
+.accord-content.active {
     max-height: 2000px;
     padding: 20px;
 }
 
-.div-notas{
+/* Estilos para seções */
+.div-notas,
+.div-freq,
+.div-ocor,
+.div-msg {
     margin-bottom: 15px;
+}
+
+.div-notas {
     display: flex;
     flex-direction: row;
 }
 
-.div-freq{
-    margin-bottom: 15px;
-}
-
-.div-ocor{
-    margin-bottom: 15px;
-}
-
-.div-msg{
-    margin-bottom: 15px;
-}
-
-/* SEÇÃO NOTAS */
-
+/* Estilos para formulários */
 label {
     display: block;
     margin-bottom: 5px;
-    margin-top: 10px;
+    margin-top: 9px;
     font-weight: bold;
 }
 
 input {
     width: 150px;
     padding: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     border-radius: 4px;
+}
 
-}
 select {
-    width: 150px;
+    width: 167px;
+    height: 32px;
     padding: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     border-radius: 4px;
 }
-option{
+
+option {
     width: 100%;
 }
-.container-btn{
-    display: block;
-    align-items: center;
+
+.formulari {
+    display: flex;
+    flex-direction: column;
 }
+
+.div1,
+.div2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.container-btn {
+    padding-top: 20px;
+}
+
+/* Estilos para tabelas */
+.div-table {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 table {
     display: flex;
     margin: 0;
-    width: calc(100%-20px);
+    width: calc(100% - 20px);
     align-items: center;
     justify-content: center;
     border-collapse: collapse;
     margin-top: 20px;
 }
-th{
+
+th {
     border: 2px solid #000000;
     padding: 1px;
-    text-align: left;
+    text-align: center;
+    font-size: 0.8em;
     background-color: white;
+    width: 70px;
 }
 
-td{
+td {
     font-size: small;
     font-weight: bold;
-    color:#000000;
+    color: #000000;
     border: 2px solid #000000;
-    padding: 15px;
-    text-align: left;
+    padding: 8px;
+    text-align: center;
     background-color: white;
 }
-form{
-    gap: 10px;
-}
 
-/* SEÇÃO MENSAGENS */
-
+/* Estilos para lista de mensagens */
 .div-msg {
     width: calc(100% - 40px);
 }
@@ -196,6 +221,22 @@ form{
     max-height: 400px;
     overflow-y: auto;
 }
+
+#mensagem-lista::-webkit-scrollbar {
+    width: 6px;
+}
+
+#mensagem-lista::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 15px;
+}
+
+#mensagem-lista::-webkit-scrollbar-thumb {
+    background-color: #7272725c;
+    border-radius: 3px;
+}
+
+/* Estilos para itens da lista de mensagens */
 .accord-header-li {
     background-color: aliceblue;
     padding: 4px;
@@ -206,30 +247,29 @@ form{
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    transition: background-color 0.3s;
-    transition: 0.5s;
+    transition: all 0.5s;
 }
-.accord-header-li:hover{
+
+.accord-header-li:hover {
     background-color: #727272;
 }
-.accord-header-li::after{
+
+.accord-header-li::after {
     content: '+';
     font-size: 20px;
 }
-.accord-header-li.active::after{
+
+.accord-header-li.active::after {
     content: '-';
-    
-    
 }
-.accord-header-li.active{
+
+.accord-header-li.active {
     border-radius: 20px;
-    border-bottom-left-radius:0px ;
-    border-bottom-right-radius:0px ;
-    transition: 0.5s;
-    
-    
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
-.accord-header-li span{
+
+.accord-header-li span {
     flex-grow: 1;
     text-align: center;
 }
@@ -239,32 +279,32 @@ form{
     flex-direction: column;
     row-gap: 3px;
     margin-bottom: 5px;
-    
 }
 
 .accord-li {
     width: calc(100% - 16px);
-    border:1px solid rgb(97, 97, 97);
+    border: 1px solid rgb(97, 97, 97);
     border-radius: 10px;
-    overflow: hidden; 
+    overflow: hidden;
 }
+
 .accord-content-li {
     display: flex;
     flex-direction: row;
-    row-gap: 0px;
     max-height: 0;
     background-color: rgb(163, 163, 163);
     overflow: hidden;
     transition: max-height 0.3s ease-out;
-    border-bottom-left-radius:20px ;
-    border-bottom-right-radius:20px ;
-    row-gap: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
-.accord-content-li.active{
+
+.accord-content-li.active {
     max-height: 2000px;
     padding: 20px;
 }
 
+/* Classes de prioridade */
 .prioridade-0 {
     background-color: rgb(147, 255, 147);
 }
@@ -277,11 +317,13 @@ form{
     background-color: rgb(255, 126, 126);
 }
 
-.btn-container{
+/* Estilos para botões */
+.btn-container {
     display: flex;
     justify-content: left;
     width: 100%;
 }
+
 button {
     font-family: 'Arial', Times, serif;
     background-color: #cecccc;
@@ -291,21 +333,25 @@ button {
     transition: background-color 0.5s;
     padding: 5px;
 }
-button:hover{
+
+button:hover {
     background-color: white;
     border-color: #000000;
-    
 }
-ul#mensagem-lista::-webkit-scrollbar {
-    width: 6px;
+
+/* Estilos para lista temporária */
+ul#vali {
+    padding: 20px;
+    margin: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
-ul#mensagem-lista::-webkit-scrollbar-track {
-    background: transparent;
-    left: 100px;
-    margin: 15px;
-    
+
+ul#vali li {
+    list-style-type: disc;
 }
-ul#mensagem-lista::-webkit-scrollbar-thumb {
-    background-color: #7272725c; 
-    border-radius: 3px; 
+
+form {
+    gap: 30px;
+    display: flex;
 }

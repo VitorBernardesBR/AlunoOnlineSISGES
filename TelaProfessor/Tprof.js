@@ -1,3 +1,4 @@
+// JS das Seções gerais
 document.addEventListener('DOMContentLoaded', function () {
     const headers = document.querySelectorAll('.accord-header')
 
@@ -24,10 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-
-
 // Seção Notas
+
 
 let form = document.getElementById('form-notas');
 form.addEventListener('submit', function(event){
@@ -58,11 +57,6 @@ form.addEventListener('submit', function(event){
     }
 
 })
-
-
-
-
-
 
 
 // Lista de Mensagens
