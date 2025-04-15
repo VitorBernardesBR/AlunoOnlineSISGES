@@ -43,5 +43,105 @@
         "assunto": "Dificuldade com a plataforma online",
         "texto": "Estou tendo problemas para acessar os materiais na plataforma. Poderia me orientar?",
         "prioridade": 1
+    },
+    {
+        "assunto": "Problema com login no sistema",
+        "texto": "Não consigo acessar minha conta no sistema acadêmico desde ontem. Aparece erro de credenciais inválidas.",
+        "prioridade": 1
+    },
+    {
+        "assunto": "Solicitação de declaração de matrícula",
+        "texto": "Preciso da declaração de matrícula atualizada para inscrição em um programa de estágio. Como posso obtê-la?",
+        "prioridade": 0
+    },
+    {
+        "assunto": "Dúvida sobre bibliografia obrigatória",
+        "texto": "A edição do livro citado no plano de ensino está esgotada. Posso usar uma edição mais recente?",
+        "prioridade": 1
+    },
+    {
+        "assunto": "Problema no laboratório de informática",
+        "texto": "Os computadores do laboratório 3 não estão conectando à rede. Poderia verificar?",
+        "prioridade": 2
+    },
+    {
+        "assunto": "Solicitação de segunda chamada",
+        "texto": "Faltarei à prova por motivo de saúde. Gostaria de solicitar a segunda chamada.",
+        "prioridade": 2
+    },
+    {
+        "assunto": "Dúvida sobre formato do trabalho final",
+        "texto": "O trabalho pode ser entregue em dupla ou precisa ser individual?",
+        "prioridade": 0
+    },
+    {
+        "assunto": "Erro no gabarito da última prova",
+        "texto": "A questão 7 tem duas alternativas corretas no gabarito publicado. Como proceder?",
+        "prioridade": 1
+    },
+    {
+        "assunto": "Material extra para pesquisa",
+        "texto": "Poderia indicar artigos acadêmicos sobre o tema do nosso próximo seminário?",
+        "prioridade": 0
+    },
+    {
+        "assunto": "Problema com o microfone nas aulas online",
+        "texto": "Seu áudio está cortando frequentemente durante as transmissões. Poderia verificar?",
+        "prioridade": 1
+    },
+    {
+        "assunto": "Solicitação de orientação para TCC",
+        "texto": "Gostaria de marcar um horário para discutir meu projeto de TCC.",
+        "prioridade": 2
+    },
+    {
+        "assunto": "Dúvida sobre cálculo da média final",
+        "texto": "Como será calculada a média considerando as atividades remotas?",
+        "prioridade": 1
+    },
+    {
+        "assunto": "Problema com arquivo enviado",
+        "texto": "O arquivo que enviei pelo sistema parece corrompido. Estou reenviando em anexo.",
+        "prioridade": 2
+    },
+    {
+        "assunto": "Solicitação de atestado médico",
+        "texto": "Enviei meu atestado pelo sistema mas não foi registrado. Como regularizar?",
+        "prioridade": 1
+    },
+    {
+        "assunto": "Dúvida sobre estágio obrigatório",
+        "texto": "Preciso de orientação sobre os documentos necessários para validar meu estágio.",
+        "prioridade": 0
+    },
+    {
+        "assunto": "Problema com acesso ao e-book",
+        "texto": "O link disponibilizado para o e-book da biblioteca não está funcionando.",
+        "prioridade": 1
+    },
+    {
+        "assunto": "Solicitação de revisão de prova",
+        "texto": "Gostaria de solicitar revisão da correção da questão 5 da última avaliação.",
+        "prioridade": 2
+    },
+    {
+        "assunto": "Dúvida sobre horário de atendimento",
+        "texto": "Seus horários de atendimento foram alterados? Não encontro a informação atualizada.",
+        "prioridade": 0
+    },
+    {
+        "assunto": "Problema com grupo de trabalho",
+        "texto": "Meu colega de grupo não está contribuindo. Como devo proceder?",
+        "prioridade": 1
+    },
+    {
+        "assunto": "Solicitação de certificado de horas complementares",
+        "texto": "Quando os certificados do último seminário serão disponibilizados?",
+        "prioridade": 0
+    },
+    {
+        "assunto": "Dúvida sobre formato da apresentação",
+        "texto": "A apresentação do seminário precisa seguir algum template específico?",
+        "prioridade": 1
     }
 ]

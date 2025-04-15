@@ -68,7 +68,7 @@ main {
 }
 
 .accord {
-    width: calc(100% - 16px);
+    
     border: 1px solid rgb(97, 97, 97);
     border-radius: 10px;
     overflow: hidden;
@@ -108,14 +108,16 @@ main {
     display: flex;
     flex-direction: row;
     max-height: 0;
+    max-width: 500px;
     background-color: aliceblue;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition:  0.3s ease-out;
 }
 
 .accord-content.active {
     max-height: 2000px;
     padding: 20px;
+    max-width: 2000px;
 }
 
 /* Estilos para seções */
@@ -212,14 +214,18 @@ td {
 /* Estilos para lista de mensagens */
 .div-msg {
     width: calc(100% - 40px);
+    
 }
 
 #mensagem-lista {
     padding: 20px;
     border: 1px #727272 solid;
+    border-radius: 20px;
     width: 700px;
     max-height: 400px;
     overflow-y: auto;
+    background-color: rgb(236, 236, 236);
+
 }
 
 #mensagem-lista::-webkit-scrollbar {
@@ -242,7 +248,8 @@ td {
     padding: 4px;
     height: 20px;
     cursor: pointer;
-    border-radius: 20px;
+    border: 1px #727272 solid;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,9 +299,10 @@ td {
     display: flex;
     flex-direction: row;
     max-height: 0;
-    background-color: rgb(163, 163, 163);
+    
+    background-color: rgb(255, 255, 255);
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: 0.3s ease-out;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -302,6 +310,7 @@ td {
 .accord-content-li.active {
     max-height: 2000px;
     padding: 20px;
+    border: 1px solid rgb(97, 97, 97);
 }
 
 /* Classes de prioridade */
